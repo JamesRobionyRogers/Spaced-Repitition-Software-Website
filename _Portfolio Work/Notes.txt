@@ -1,0 +1,109 @@
+
+Wireframes:         19th May 2021
+
+    Feedback received from Annika
+    Need to provide and receive feedback from Shak 
+
+Site Map:           20th May 2021
+
+    Site map has been made on GlooMaps and saved under the url
+    https://www.gloomaps.com/kecJekoJao
+
+
+
+
+Website Notes: 
+
+    Font Awesome Icons: 
+        Admin User:         <i class="fas fa-user-shield"></i>
+        Standard User:      <i class="fas fa-user-alt"></i>
+        Logout:             <i class="fas fa-sign-out-alt"></i>
+
+    
+    Lesson Card Template (HTML): 
+
+        <div class="card-wrapper">
+            <div class="card-container">
+                <a class="card" href="">
+                    <div class="card-title">
+                        <img class="illustration card-top" src="imgs/lesson-card-top.svg" alt="">
+                        <h1 class="card-title">Ngāti Toa</h1>
+                    </div>
+                
+                    <img class="illustration enviro"  src="" alt="An illustration depicting a hand holding some plants  ">
+                </a>
+            </div>
+        </div>
+
+
+
+    PHP Functions: (question-backend.php)
+
+        function loadQuiz($dbc, $quizID) {
+
+            // Check if the user has started the quiz. 
+                // If asked isset then quiz in progress
+            if ( isset($_POST['asked']) ) {
+                // $score = $_POST['score']; 
+
+                // Load the next question
+                // loadNextQuestion(); 
+
+            } else { 
+                // Other wise,  start a new quiz: 
+                // $questions = getQuestions($quizID);     // retrieving the question pool 
+                // $currentQuestion = $questions[0];       // setting first question from pool 
+
+                // loadNextQuestion();
+
+
+            }
+        } 
+
+        function loadNextQuestion($questions, $x, $score) {
+            
+            switch (count($questions) == 0) {
+            // if there are no more question, then display the results page 
+            case true:
+                // createResultsHTML($score, $numberAsked);
+                break;
+            // Other wise 
+            default:
+                foreach ($questions as $question) {
+                    echo $question['question'] . ' • ';
+                }
+
+                createQuestionHTML($questions, $numberAsked, $score);
+                break;
+            }
+        }
+
+
+----------- Design Documentation -----------
+
+Justify that the chosen design is suitable for the purpose and end users:
+
+    First, the purpose of this digital outcome is to produce a Spaced Repetition Website using content provided to us. The site should have a total of 5 quizzes/lessons each with a total of 15 questions but only displaying a random 10 each time the quiz/lesson is taken. 
+    The outcome I have produced fits the purpose. The outcome delivers a quiz experience picking 10 questions from a pool of 15 displaying with either a text box or multi-choice answer page. The site then shows the user a results page where they can see how well they’ve done throughout the quiz and lessons. Looking at the website from a legal perspective, as previously stated, I have also made sure that all of the content such as images, illustrations, fonts, etc… have been sourced with an open-source licence meaning I am legally allowed to use the content. 
+    As for being suitable for the end users, I have made sure to follow all of the relevant implications I have previously stated in the documentation. This includes following relevant Usability aspects such as keeping content consistent site wide and including informative feedback about system status just to name a couple. As for Accessibility I have don’t things such as improved visibility by contrast checking my colour scheme to make sure it is suitable for those with visual impairments and using the correct description tags in forms for those using screen readers. 
+
+        
+
+Investigate relevant user experience methodologies
+
+    Methodology 1: User Interface Design
+
+        In my outcome I will use user interface design. According to usability.gov, some of the key aspects of user interface design are: 
+        -	Keeping a simple interface 
+        -	Creating consistency with common UI elements 
+        -	Making sure the system communicates what’s happening 
+        By following these key points my outcome will be more well-rounded meaning it is easily usable. A very important thing for a website to be. 
+
+    Methodology 2: Interaction Design
+
+        In addition to the methodology above I will also use interaction design. Interaction design is defined by the “design of the interaction between user and product” – Interaction Design Foundation. Taking into consideration interaction design while developing my outcome will be useful for my outcome in that I will have thought about and maybe even planned how the user is intended to use and interact with the site meaning interaction will go smoothly and with out error (on the user’s side).   
+
+    Methodology 3: Accessibility
+
+        In addition to the others above I will also use accessibility. Interaction Design Foundation explain Accessibility of a website as similar to usability however it’s more concerned with whether all users can access an equivalent user experience focusing largely on people with disabilities. 
+        Taking accessibility into consideration while developing my outcome will be useful because it means everyone, including those with disabilities, wanting/needing to use my site will be able to with out difficulty. Just because someone has a disability shouldn’t mean they are disadvantaged even further by not being able to access websites. 

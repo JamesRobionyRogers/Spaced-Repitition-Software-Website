@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="475.87" height="348.257" viewBox="0 0 475.87 348.257">
+  <style> 
+    path {
+      box-shadow: 0 0 40px -10px rgba(0, 0, 0, 1);
+    }
+  </style>
+  <defs>
+    <filter id="White_Top" x="0" y="0" width="475.87" height="348.257" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feFlood flood-opacity="0.45"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#White_Top)">
+    <path id="White_Top-2" data-name="White Top" d="M87.359,763.076s58.019-201.736,223.383-129.933,234.487-64.187,234.487-64.187v-134.9l-350.268-1.233s-107.6.534-107.6,0Z" transform="translate(-78.36 -426.82)" fill="#fff"/>
+  </g>
+</svg>

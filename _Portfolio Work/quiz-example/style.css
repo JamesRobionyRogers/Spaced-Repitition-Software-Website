@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.answer {
+    width: 200px;
+    height: 100px;
+    margin: 8px auto;
+    box-sizing: border-box;
+    
+    background-color: lightgray;
+
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+}
+
+.answer:hover {
+    border: 5px solid black;
+
+    background: lightgoldenrodyellow;
+
+    line-height: 90px;
+}
+
+.answer a {
+    color: black;
+    text-decoration: none;
+}
+
+.answer:visited {
+    color: black;
+}
